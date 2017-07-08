@@ -15,23 +15,35 @@
 		<action name="Login" class="loginAction" method="execute">
 			<result name="manageView">/jsp/manageView.jsp</result>
 		</action>
-	
-		
+
+
 		<!-- ManageAction -->
 		<action name="Manage_*" class="manageAction" method="{1}">
-			<result name="signInfoView" >/jsp/signInfoView.jsp</result>
+			<result name="signInfoView">/jsp/signInfoView.jsp</result>
 			<result name="signInfoList">/jsp/signInfoList.jsp</result>
-			<result name="recognizeSignView" >/jsp/recognizeSignView.jsp</result>
+			<result name="recognizeSignView">/jsp/recognizeSignView.jsp</result>
 			<result name="recognizeSignList">/jsp/recognizeSignList.jsp</result>
 			<result name="chuchaiForm">/jsp/chuchaiForm.jsp</result>
 			<result name="summaryForm">/jsp/summaryForm.jsp</result>
 		</action>
-		
+
 		<!-- ImageAction -->
 		<action name="Image_*" class="imageAction" method="{1}">
 			<result name="uploadSuccess">/jsp/collectView.jsp</result>
 			<result name="readSuccess">/jsp/collectView.jsp</result>
 		</action>
-		
+
+
+		<!-- 系统管理 -->
+		<package name="sysManage" namespace="/systemManage"
+			extends="struts-default,json-default">
+
+			<action name="permTreeAction" class="com.test.RoleAction"
+				method="searchPermTree">
+				<result type="json">
+					<param name="includeProperties">permString</param>
+				</result>
+			</action>
+		</package>
 	</package>
 </struts>
