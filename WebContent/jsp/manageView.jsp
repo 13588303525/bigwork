@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>学生签到管理系统</title>
 <link href="../css/manage.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
 <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
