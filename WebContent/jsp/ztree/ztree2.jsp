@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
-<script src="../ztree/js/jquery.ztree.all-3.5.js"></script>
-<link href="../ztree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+<script src="../../ztree/js/jquery.ztree.all-3.5.js"></script>
+<link href="../../ztree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
 <!--  http://www.cnblogs.com/landeanfen/p/5124913.html -->
 <script>
 var setting2 = {
