@@ -10,8 +10,8 @@
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <link href="../icheck/skins/square/blue.css" rel="stylesheet">
-<script src="../icheck/jquery.icheck.js"></script>
+    <link href="../../icheck/skins/square/blue.css" rel="stylesheet">
+<script src="../../icheck/jquery.icheck.js"></script>
 
 <script>
 $(document).ready(function(){

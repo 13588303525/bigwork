@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+     <!-- Teacher：教师表 -->  
+    <class name="cn.sign.model.Teacher" table="teacher_table">
+        <id name="t_id" column="t_id" unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="t_name" column="t_name" type="java.lang.String" />
+        <property name="pwd" column="pwd" type="java.lang.String" />
+    </class>
+    
+    <!-- Course：课程表 -->
+    <class name="cn.sign.model.Course" table="course_table">
+        <id name="c_id" column="c_id" unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="c_name" column="c_name" type="java.lang.String" />
+        <property name="t_id" column="t_id" type="java.lang.Integer" />
+    </class>
+    
+    <!-- Sc：选课表 -->
+    <class name="cn.sign.model.Sc" table="sc_table">
+        <id name="sc_id" column="sc_id" unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="s_id" column="s_id" type="java.lang.Integer" />
+        <property name="c_id" column="c_id" type="java.lang.Integer" />
+        <property name="t_id" column="t_id" type="java.lang.Integer" />
+        <property name="mark" column="mark" type="java.lang.String" />
+    </class>
+    
+    <!-- Student：学生表 -->
+    <class name="cn.sign.model.Student" table="student_table">
+        <id name="s_id" column="s_id" unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="s_name" column="s_name" type="java.lang.String" />
+        <property name="s_class" column="s_class" type="java.lang.String" />
+        <property name="havePhoto" column="havePhoto" type="java.lang.String" />
+        <property name="picsPath" column="picsPath" type="java.lang.String" />
+    </class>
+    
+    
+    <!-- Sign：签到表 -->
+    <class name="cn.sign.model.Sign" table="sign_table">
+        <id name="sg_id" column="sg_id" unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="c_id" column="c_id" type="java.lang.Integer" />
+        <property name="s_id" column="s_id" type="java.lang.Integer" />
+        <property name="score" column="score" type="java.lang.String" />
+    </class>
+</hibernate-mapping>
