@@ -9,6 +9,16 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 <script src="../bootstrap/js/bootstrap.min.js"></script>
+<link href="../icheck/skins/flat/blue.css" rel="stylesheet">
+<script src="../icheck/jquery.icheck.js"></script>
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-blue',
+    increaseArea: '5%' // optional
+  });
+});
+</script>
 <script type="text/javascript">
  //为节点添加展开，关闭的操作
 $(function(){
@@ -93,28 +103,28 @@ $(function(){
 <body>
 <div class="tree well">
   <ul>
-    <li> <span><i class="icon-folder-open"></i> 廊坊师范学院</span>
+    <li> <span><i class="icon-folder-open"></i> <input type="checkbox">廊坊师范学院</span>
       <ul>
-        <li> <span><i class="icon-minus-sign"></i> 教育学院</span>
+        <li> <span><i class="icon-minus-sign"></i> <input type="checkbox">教育学院</span>
           <ul>
-            <li> <span><i class="icon-leaf"></i> 学前教育</span> </li>
+            <li> <span><i class="icon-leaf"></i> <input type="checkbox">学前教育</span> </li>
           </ul>
         </li>
-        <li> <span><i class="icon-minus-sign"></i> 物电学院</span>
+        <li> <span><i class="icon-minus-sign"></i> <input type="checkbox">物电学院</span>
           <ul>
-            <li> <span><i class="icon-leaf"></i> 电气工程技术</span> </li>
-            <li> <span><i class="icon-minus-sign"></i> 电子信息科学技术</span>
+            <li> <span><i class="icon-leaf"></i> <input type="checkbox">电气工程技术</span> </li>
+            <li> <span><i class="icon-minus-sign"></i> <input type="checkbox">电子信息科学技术</span>
               <ul>
-                <li> <span><i class="icon-minus-sign"></i> 电子一班</span>
+                <li> <span><i class="icon-minus-sign"></i> <input type="checkbox">电子一班</span>
                   <ul>
-                    <li> <span><i class="icon-leaf"></i> 宋笑</span> </li>
-                    <li> <span><i class="icon-leaf"></i> 二盟</span> </li>
+                    <li> <span><i class="icon-leaf"></i> <input type="checkbox">宋笑</span> </li>
+                    <li> <span><i class="icon-leaf"></i> <input type="checkbox">二盟</span> </li>
                   </ul>
                 </li>
-                <li> <span><i class="icon-leaf"></i> 电子二班</span> </li>
+                <li> <span><i class="icon-leaf"></i> <input type="checkbox">电子二班</span> </li>
               </ul>
             </li>
-            <li> <span><i class="icon-leaf"></i> 物理学</span> </li>
+            <li> <span><i class="icon-leaf"></i> <input type="checkbox">物理学</span> </li>
           </ul>
         </li>
       </ul>
