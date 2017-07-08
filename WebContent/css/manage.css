@@ -1,0 +1,81 @@
+@charset "utf-8";
+.head {
+	height: 100px;
+	background-color: rgb(126,126,126);
+	width: 100%;
+}
+
+
+.head #timg {
+	float: left;
+	padding-left: 100px;
+}
+
+.head #tName {
+	font-size: 28px;
+	float: left;
+	text-align: center;
+	margin-top: 35px;
+	margin-left: 30px;
+}
+.menu {
+	background-color: rgb(210,210,210);
+	height: 25px;
+}
+.menu #identityImg {
+	margin-top: 3px;
+	margin-left: 20px;
+	float: left;
+	height: 22px;
+}
+.menu #currentUser {
+	font-size: 16px;
+	float: left;
+	height: 22px;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+.left_body {
+	width: 20%;
+	height:70%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.right_body #signResearch #resForm #course {
+	padding-left: 13px;
+}
+
+
+.left_body .stuManage  {
+	background-color: rgb(153,153,153);
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+}
+.left_body .function {
+	background-color: rgb(250,250,250);
+	font-size: 14px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.right_body {
+	width: 76%;
+	height:70%;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bottom {
+	higtht:10%;
+	margin: 3px;
+	background-color: rgb(126,126,126);
+	height: 20px;
+	clear: both;
+	width: 100%;
+}

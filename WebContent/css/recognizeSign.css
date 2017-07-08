@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.right_body #recTitle  {
+	background-color: rgb(153,153,153);
+	clear: both;
+	height: 25px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	width: 100%;
+}
+.right_body #recTitle #recImg  {
+	float: left;
+	margin-left: 15px;
+	width: 3%;
+
+}
+.right_body #recTitle #recName  {
+	font-size: 16px;
+	float: left;
+	margin-left: 10px;
+	width: 13%;
+}
+.right_body #recognizeSign  {
+	background-color: rgb(245,245,245);
+	clear: both;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.right_body #recognizeSign #recForm select {
+	margin-right: 20px;
+	width: 15%;
+}
+
+.right_body #recognizeSign #recForm #courseSelect {
+	padding-left: 13px;
+}
+
+.right_body table {
+	width: 100%;
+	clear: both;
+}

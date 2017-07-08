@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 指定以name的方式组合struts和spring的关系 -->
+	<constant name="struts.objectFactory.spring.autoWire" value="name"></constant>
+
+	<package name="struts2" extends="struts-default">
+		<!-- class的值，这里没有类的路径，为了是在Spring中根据此值进行查找bean的id来获得路径，下面还是用了通配符 -->
+		<!-- LoginAction -->
+		<action name="Login" class="loginAction" method="execute">
+			<result name="manageView">/jsp/manageView.jsp</result>
+		</action>
+	
+		
+		<!-- ManageAction -->
+		<action name="Manage_*" class="manageAction" method="{1}">
+			<result name="signInfoView" >/jsp/signInfoView.jsp</result>
+			<result name="signInfoList">/jsp/signInfoList.jsp</result>
+			<result name="recognizeSignView" >/jsp/recognizeSignView.jsp</result>
+			<result name="recognizeSignList">/jsp/recognizeSignList.jsp</result>
+			<result name="chuchaiForm">/jsp/chuchaiForm.jsp</result>
+			<result name="summaryForm">/jsp/summaryForm.jsp</result>
+		</action>
+		
+		<!-- ImageAction -->
+		<action name="Image_*" class="imageAction" method="{1}">
+			<result name="uploadSuccess">/jsp/collectView.jsp</result>
+			<result name="readSuccess">/jsp/collectView.jsp</result>
+		</action>
+		
+	</package>
+</struts>
